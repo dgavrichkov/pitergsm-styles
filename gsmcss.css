@@ -7762,7 +7762,7 @@ img.zoom-img {
     background-color: #f5f5f5;
     display: flex;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 0;
 }
 
 .sec-offers__col {
@@ -7772,8 +7772,10 @@ img.zoom-img {
     outline: 0 !important;
 }
 
+
 .s-offer {
     padding: 10px;
+    /* height: 100%; */
 }
 
 .s-offer__img {
@@ -7786,22 +7788,25 @@ img.zoom-img {
     height: 100%;
     object-fit: cover;
     padding: 5px;
+    object-position: center;
 }
 
 
 .s-offer__block {
     position: relative;
     z-index: 1;
-    padding: 60px 62px;
+    /* display: block; */
+    /* height: 100%; */
+    /* padding: 60px 62px; */
 }
 
 .s-offer__block-title {
-    max-width: 290px;
+    /* max-width: 290px; */
     color: #000;
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
-    min-height: 84px
+    /* min-height: 84px; */
 }
 
 .s-offer__btn {
@@ -7930,6 +7935,72 @@ img.zoom-img {
     .sec-offers .slick-next {
         right: -10px;
         margin-right: 0;
+    }
+}
+
+/* DJRestyle index banner */
+@media screen and (max-width: 425px) {
+    .sec-offers__row {
+        padding: 0;
+        background-color: #ffffff;
+    }
+    .s-offer {
+        height: 100%;
+        padding: 0;
+        /* border-radius: 12px; */
+        overflow: hidden;
+        position: relative;
+    }
+    .s-offer::before {
+        content:"";
+        position:absolute;
+        width:100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(27, 58, 79, 0) 51.14%, rgba(53, 108, 146, 0.3) 100%);
+        left: 0;
+        top: 0;
+        z-index: 4;
+        border-radius: 12px;
+    }
+
+    .sec-offers__col {
+        min-height: 335px;
+    }
+
+    .s-offer__img {
+        padding: 0;
+        border-radius: 12px;
+        width: 120%;
+        object-position: 100% 50%;
+    }
+    .s-offer__block {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        padding: 21px 23px;
+        justify-content: flex-end;
+    }
+    .s-offer__block-title {
+        order: 1;
+        padding:0;
+        text-align: left;
+        max-width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+
+    }
+    .s-offer__desc {
+        order: 2;
+        max-width: 100%;
+        text-align: left;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 8px;
+    }
+    .s-offer--light .s-offer__block-title, .s-offer--light .s-offer__desc {
+        color: #fff;
     }
 }
 
