@@ -3539,7 +3539,11 @@ body {
     }
 }
 
-
+@media screen and (max-width: 425px) {
+    .container {    
+        padding: 0 20px;
+    }
+}
 
 /*--------------------- BLOCKS: Stop-modal window ----------------------------*/
 .stop-modal {
