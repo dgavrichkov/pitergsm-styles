@@ -14440,6 +14440,7 @@ button, input, optgroup, select, textarea {
     } 
     .page-head__nav {
         padding: 0;
+        margin: 0;
         margin-right: -20px;
     }
     .breadcrumbs {
@@ -14487,10 +14488,22 @@ button, input, optgroup, select, textarea {
 /* DJRestyle - filter */
 @media screen and (max-width: 425px) {
     .catalog__mob-show {
-        /* display: flex; */
-        /* justify-content: space-between; */
         display: grid;
         grid-template-columns: 1fr auto;
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        position: relative;
+    }
+    .catalog__mob-show::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 1px;
+        background: #DADADA;
+        top: 0;
+        left: -20px;
     }
     .catalog__mob-btn {
         padding: 0;
@@ -14556,13 +14569,24 @@ button, input, optgroup, select, textarea {
         background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNyAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjUzODQgMy4wODEyVjExLjQ1ODNDNC41Mzg0IDExLjg5NTYgNC44OTI4NCAxMi4yNSA1LjMzMDA3IDEyLjI1QzUuNzY3MjkgMTIuMjUgNi4xMjE3NCAxMS44OTU2IDYuMTIxNzQgMTEuNDU4M1YzLjA3NDYzTDguMzM2MDYgNS4yODg5NkM4LjY0NTIzIDUuNTk4MTIgOS4xNDY0OCA1LjU5ODEyIDkuNDU1NjUgNS4yODg5NkM5Ljc2NDgxIDQuOTc5NzkgOS43NjQ4MSA0LjQ3ODU0IDkuNDU1NjUgNC4xNjkzN0w1Ljg5MzE1IDAuNjA2ODc0QzUuNzM4MTUgMC40NTE4NzQgNS41MzQ4NyAwLjM3NDU4NCA1LjMzMTcxIDAuMzc1MDAyQzUuMzMxMTcgMC4zNzUwMDEgNS4zMzA2MiAwLjM3NSA1LjMzMDA3IDAuMzc1QzUuMDg5NTcgMC4zNzUgNC44NzQxMyAwLjQ4MjIzNyA0LjcyODkzIDAuNjUxNTAyTDEuMjExMDYgNC4xNjkzN0MwLjkwMTg5NiA0LjQ3ODU0IDAuOTAxODk2IDQuOTc5NzkgMS4yMTEwNiA1LjI4ODk2QzEuNTIwMjMgNS41OTgxMiAyLjAyMTQ4IDUuNTk4MTIgMi4zMzA2NSA1LjI4ODk2TDQuNTM4NCAzLjA4MTJaTTEyLjA1OTIgMi43NUMxMi40OTY1IDIuNzUgMTIuODUwOSAzLjEwNDQ0IDEyLjg1MDkgMy41NDE2N1YxMS45MjU0TDE1LjA2NTIgOS43MTEwNEMxNS4zNzQ0IDkuNDAxODggMTUuODc1NiA5LjQwMTg4IDE2LjE4NDggOS43MTEwNEMxNi40OTQgMTAuMDIwMiAxNi40OTQgMTAuNTIxNSAxNi4xODQ4IDEwLjgzMDZMMTIuNjIyMyAxNC4zOTMxQzEyLjQ2NzMgMTQuNTQ4MSAxMi4yNjQgMTQuNjI1NCAxMi4wNjA4IDE0LjYyNUMxMi4wNjAzIDE0LjYyNSAxMi4wNTk4IDE0LjYyNSAxMi4wNTkyIDE0LjYyNUMxMS44MTg3IDE0LjYyNSAxMS42MDMzIDE0LjUxNzggMTEuNDU4MSAxNC4zNDg1TDcuOTQwMjMgMTAuODMwNkM3LjYzMTA2IDEwLjUyMTUgNy42MzEwNiAxMC4wMjAyIDcuOTQwMjMgOS43MTEwNEM4LjI0OTM5IDkuNDAxODggOC43NTA2NSA5LjQwMTg4IDkuMDU5ODEgOS43MTEwNEwxMS4yNjc2IDExLjkxODhWMy41NDE2N0MxMS4yNjc2IDMuMTA0NDQgMTEuNjIyIDIuNzUgMTIuMDU5MiAyLjc1WiIgZmlsbD0iIzJGODFDRCIvPgo8L3N2Zz4K');
                                         
     }
+    .page-head__nav {
+        margin-bottom: 24px;     
+    }
+    .page-head__nav .button-line__item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 /* DJRestyle - product card */
 @media screen and (max-width: 425px) {
+    .catalog__head {
+        padding: 0;
+    }
     .catalog__list.like-cards {
         margin-left: -20px;
         margin-right: -20px;
+        margin-top: 0;
     }
     .catalog__list.like-cards .catalog__item {
         padding: 0;
@@ -14677,6 +14701,9 @@ button, input, optgroup, select, textarea {
     }
     .like-cards .prod-card__offers {
         grid-area: ofr;
+        margin: 0;
+        margin-top: 15px;
+        justify-content: flex-start;
     }
     .like-cards .prod-card__actions {
         grid-area: act;
@@ -14774,3 +14801,29 @@ button, input, optgroup, select, textarea {
     }
 }
 
+/* DJRestyle - card detail */
+@media screen and (max-width: 425px) {
+    .bx-breadcrumb {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-right: -20px;
+    }
+    .bx-breadcrumb .bx-breadcrumb-item {
+        margin: 0;
+        margin-right: 6px;
+    }
+    .bx-breadcrumb .bx-breadcrumb-item a, .bx-breadcrumb .bx-breadcrumb-item span {
+        white-space: nowrap;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 132.5%;
+        color: #B1B1B1;
+    }
+
+    .page-head__title[data-product-name] {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 132.5%;
+    }
+}
