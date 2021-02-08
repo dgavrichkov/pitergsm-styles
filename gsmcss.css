@@ -14715,5 +14715,62 @@ button, input, optgroup, select, textarea {
         background-size: 20px 16px;
         background-position: left top 1px;
     }
+
+    .prod-card_simple {
+        padding: 0px 14px 10px;
+        height: auto;
+    }
+    .prod-card_simple .prod-card__desc > * {
+        text-align: left;
+    }
+    .prod-card_simple .prod-card__pict {
+        margin-bottom: 15px;
+        height: 136px;
+    }
+    .prod-card_simple .prod-card__category {
+        display: none;
+    }
+    .prod-card_simple .prod-card__title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 132.5%;
+        color: #000000;
+        height: 57px;
+        overflow: hidden;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .prod-card_simple .prod-card__info {
+        align-items: flex-start;
+    }
+    .prod-card_simple .prod-card__info > *{
+        text-align: left;
+
+    }
+    .prod-card_simple .prod-card__price {
+        margin-bottom: 10px;
+    }
+    .prod-card_simple .price__now {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 132.5%;
+        color: #000000;
+    }
+    .prod-card_simple .prod-card__buy {
+        display: flex;
+        flex-direction: column;
+    }
+    .prod-card_simple .prod-card__count {
+        margin: 0;
+        order: 1;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .prod-card_simple .product-buy-trigger {
+        min-width: 107px;
+    }
 }
 
