@@ -14464,6 +14464,9 @@ button, input, optgroup, select, textarea {
         color: #a3a3a3;
         margin-right: 10px;
     }
+     {
+
+    }
     .breadcrumbs__item:after {
         content: "";
         width: 6px;
@@ -14476,6 +14479,7 @@ button, input, optgroup, select, textarea {
     .breadcrumbs__item:last-child:after {
         display: none;
     }
+    .breadcrumbs__item span,
     .breadcrumbs__link {
         white-space: nowrap;
     }
@@ -15164,6 +15168,42 @@ button, input, optgroup, select, textarea {
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;  
       overflow: hidden;
+    }
+
+    .page-cntr {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 54px;
+    }
+
+    .page-body p > img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .user-content-styles h1 {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        margin: 22px 0;
+    }
+    .user-content-styles h2, .user-content-styles .like-H2 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 16px 0;
+    }
+    .user-content-styles p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .user-content-styles p:empty {
+        margin: 0;
+        padding: 0;
+    }
+    .user-content-styles p:last-child {
+        margin-bottom: 0;
     }
 }
 
