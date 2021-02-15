@@ -15321,3 +15321,57 @@ button, input, optgroup, select, textarea {
         line-height: 19px;
     }
 }
+
+/* DJRestyle - favor */
+@media screen and (max-width: 425px) {
+    .msg-auth {
+        background: #F6F6F6;
+        border-radius: 12px;
+        position: relative;
+        padding: 30px 22px 22px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 37px;
+    }
+    .msg-auth__close span {
+        display: none;
+    }
+    .msg-auth__close {
+        width: 12px;
+        height: 12px;
+        background:none;
+        border: none;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUwxMi45MTk5IDEyLjkxOTkiIHN0cm9rZT0iI0EzQTNBMyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTEyLjkxOTkgMUwxIDEyLjkxOTkiIHN0cm9rZT0iI0EzQTNBMyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+    }
+    .msg-auth__text {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .msg-auth__link {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #9DBD49;
+        margin-top: 16px;
+    }
+    .msg-auth__link::after {
+        content: "";
+        width: 8px;
+        height: 10px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDYgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDlMNSA1TDEgMSIgc3Ryb2tlPSIjOURCRDQ5IiBzdHJva2Utd2lkdGg9IjEuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+}
