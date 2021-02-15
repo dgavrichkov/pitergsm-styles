@@ -15181,22 +15181,12 @@ button, input, optgroup, select, textarea {
         height: auto;
     }
 
-    .user-content-styles h1 {
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 29px;
-        margin: 22px 0;
-    }
-    .user-content-styles h2, .user-content-styles .like-H2 {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 24px;
-        margin: 16px 0;
-    }
+    
     .user-content-styles p {
         font-size: 14px;
         line-height: 20px;
         color: #000000;
+        font-weight: 400;
     }
     .user-content-styles p:empty {
         margin: 0;
@@ -15273,5 +15263,61 @@ button, input, optgroup, select, textarea {
     }
     .contacts__way-step {
         margin-bottom: 50px;
+    }
+}
+
+/* DJRestyle - delivery */
+@media screen and (max-width: 425px) {
+    .user-content-styles .row {
+        margin: 0;
+    }
+    .user-content-styles ul li {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        padding-left: 40px;
+    }
+    .user-content-styles h1 {
+        margin: 22px 0;
+    }
+    
+    .user-content-styles h1, .user-content-styles .like-H1 {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .user-content-styles h2, .user-content-styles .like-H2 {
+        font-weight: bold;
+        margin: 16px 0;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .user-content-styles h3, .user-content-styles .like-H3 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .user-content-styles h3 > img, .user-content-styles .like-H3 > img {
+        margin-right: 22px;
+    }
+    .table-wrapper td {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .user-content-styles h4, .user-content-styles .like-H4 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .user-content-styles h5, .user-content-styles .like-H5 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .user-content-styles h6, .user-content-styles .like-H6 {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
     }
 }
