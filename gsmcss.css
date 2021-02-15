@@ -15212,3 +15212,66 @@ button, input, optgroup, select, textarea {
         display: none;
     }
 }
+/* DJRestyle - contacts */
+
+@media screen and (max-width: 425px) {
+    .contacts {
+        padding: 0 20px;
+    }
+    .contacts__side {
+        text-align: left;
+    }
+    .contacts__info {
+        padding: 0;
+    }
+    .contacts__info-row {
+        margin: 0;
+        padding-bottom: 35px;
+        align-items: flex-start;
+        margin-bottom: 26px;
+    }
+    .contacts__info-section-head {
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 8px;
+    }
+    .contacts__header {
+        text-align: left;
+    }
+    .contacts__way-step-about {
+        padding: 0;
+        /* align-items: flex-start; */
+        justify-content: flex-start;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .contacts__header {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    .contacts__info-row:after {
+        top: 100%;
+    }
+    .contacts__info-section-text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .contacts__info-section {
+        margin-bottom: 28px;
+    }
+    .contacts__way-step {
+        margin-bottom: 50px;
+    }
+}
