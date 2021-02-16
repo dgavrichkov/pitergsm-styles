@@ -15598,7 +15598,7 @@ button, input, optgroup, select, textarea {
 
 /* DJRestyle - basket */
 @media screen and (max-width: 425px) {
-    #basket_form .tile {
+    #basket_form .tile.has-no-padding {
         margin: 0;
     }
 
@@ -15720,4 +15720,9 @@ button, input, optgroup, select, textarea {
     .cart-prod .counter__btn_more {
         background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuOTA4NTcgMS4xMjExVjEyLjc4ODMiIHN0cm9rZT0iI0EyQTJBMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMS4wNzQ5NSA2Ljk1NDcySDEyLjc0MjIiIHN0cm9rZT0iI0EyQTJBMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
     }
+}
+
+/* DJRestyle - orderpage */
+@media screen and (max-width: 425px) {
+    
 }
