@@ -15188,12 +15188,6 @@ button, input, optgroup, select, textarea {
         line-height: 16px;
     }
 
-    .delivery-inf-wrap {
-
-    }
-    .detail-delivery-inf {
-
-    }
     .detail-delivery-inf .delivery-str {
         padding-left: 36px;
         padding-right: 20px;
@@ -15239,7 +15233,67 @@ button, input, optgroup, select, textarea {
         top: 2px;
         right: 0;
     }
+
+    .product-tab__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 18px;
+        padding: 0 20px;
+    }
+    .product-tab__title:not(:first-child) {
+        margin-top: 30px;        
+    }
+    .prod-props {
+        margin: 0;
+        overflow: visible;
+    }
+
+    .prod-props__item {
+        padding: 15px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+        position: relative;
+        overflow: visible;
+    }
+    .prod-props__item::after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 40px);
+        height: 1px;
+        left: -20px;
+        top: 100%;
+        background: #DADADA;
+    }
+    .prod-props__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .prod-props__name:after {
+        display: none;
+    }
+    .prod-props__data {
+        width: 100%;
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .prod-props__name span {
+        padding: 0;
+    }
+    .product-tabs__body {
+        margin: 0 -20px;
+    }
 }
+
 
 /* DJRestyle - articles */
 @media screen and (max-width: 425px) {
