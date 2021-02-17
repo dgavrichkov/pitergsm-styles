@@ -15865,12 +15865,14 @@ button, input, optgroup, select, textarea {
         line-height: 20px;
         color: #12121D;
         background: none;
-        padding: 0;
-        height: 56px;
+        padding: 10px;
+        min-height: 56px;
+        height: auto;
         justify-content: center;
         border: 3px solid #EAECEF;
         box-sizing: border-box;
         border-radius: 7px;
+        text-align: center;
      }
      .order__reg .square-check__input:checked + .square-check__text {
         background: none;
