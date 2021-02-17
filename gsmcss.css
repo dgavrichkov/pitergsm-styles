@@ -15740,7 +15740,7 @@ button, input, optgroup, select, textarea {
         margin-left: -20px;
         margin-right: -20px;
         padding: 0 20px 20px;
-        padding-bottom: 20px;
+        padding-bottom: 55px;
         border-bottom: 1px solid #DADADA;
     }
     .order__title {
@@ -15755,6 +15755,9 @@ button, input, optgroup, select, textarea {
         margin-left: -20px;
         border-bottom: 1px solid #DADADA;
         padding: 0 20px;
+    }
+    .bubble-tabs__item {
+        padding: 0;
     }
     .bubble-tabs__btn {
         font-weight: normal;
@@ -15948,14 +15951,75 @@ button, input, optgroup, select, textarea {
         left: initial;
         right: 20px;
         top: calc(50% - 10px);
+        width: 20px;
+        background-color: #EAECEF;
+        height: 20px;
+        border: none;
     }
-    
+    .form__radio > span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: calc(50% - 4px);
+        left: initial;
+        right: calc(20px + 6px);
+    }
     .form__radio > input:checked + span {
         color: #000;
+        background: rgba(31, 117, 215, 0.06);
+    }
+    .form__radio > input:checked + span:before {
+        background-color: #1F75D7;
     }
     .form__radio > input:checked + span:after {
-        top: calc(50% - 5px);
+        top: calc(50% - 4px);
         left: initial;
-        right: calc(20px + 5px);
+        right: calc(20px + 6px);
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+    }
+    .form__line .col_9-12 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .order__ship [class*='col_']:last-child {
+        margin-bottom: 0;
+    }
+    .form__line [class*='col_']:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* DJRestyle - orderselect */
+@media screen and (max-width: 425px) {
+    .order-select .new-select {
+        font-size: 14px;
+        line-height: 20px;
+        color: #12121D;
+    }
+    .order-select .new-select.on {
+        background: #E8E8E9;        
+    }
+    .order-select .new-select:after {
+        width: 14px;
+        height: 7px;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUw4IDhMMTUgMSIgc3Ryb2tlPSIjMTIxMjFEIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;    
+    }
+    .new-select__list.on {
+        background: #F3F3F4;
+    }
+    .new-select__item {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
