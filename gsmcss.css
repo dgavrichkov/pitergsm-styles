@@ -15087,6 +15087,20 @@ button, input, optgroup, select, textarea {
         height: 48px;
         line-height: 16px;
     }
+    .form__checkbox {
+
+    }
+    .form__checkbox > span {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        color: #A2A2A2;
+        padding-left: 23px;
+    }
+    .form__line.col_6-12 {
+        margin: 0;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (min-width: 426px) {
@@ -16319,4 +16333,16 @@ button, input, optgroup, select, textarea {
 
         color: #A2A2A2;
     }
+}
+
+/* DJRestyle - lk */
+@media screen and (max-width: 425px) {
+    .tile {
+        padding: 0;
+        margin: 0;
+    }
+    .tile .changer.is-active {
+        margin: 0;
+    }
+
 }
